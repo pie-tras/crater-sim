@@ -9,6 +9,17 @@ Background
 
 Crater saturation is a phenomenon that occurs on planetary surfaces when the rate at which new craters form is roughly equal to the rate at which old craters are destroyed or erased. This can be identified when the number of craters on a surface remains constant over time, indicating that the surface has reached a state of equilibrium. Once a surface has reached saturation, observations of the rate at which new craters are forming can be used to estimate the time since saturation, providing a relative age for the surface.
 
+Install Notes
+=============
+
+For imageio:
+
+.. code:: bash
+
+    pip install imageio
+    pip install imageio[ffmpeg]
+    pip install imageio[pyav]
+
 Model Assumptions
 =================
 
@@ -201,6 +212,3 @@ The above code uses the following parameters to initialize the simulation:
 | outlineMode      | When enabled draws filled in        |
 |                  | craters. This is slower.            |
 +------------------+-------------------------------------+
-
-
-
