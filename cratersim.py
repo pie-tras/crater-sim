@@ -293,5 +293,5 @@ class CraterSim:
         iio.imwrite('animation.mp4', images, fps=self.fps)
 
 # User config
-sim = CraterSim(terrainLength=500, minCraterRadius=5, maxCraterRadius=50, surfaceValue=185, craterValue=50, occlusionValue=0.6, fps=30)
-sim.generateCraters(steps=2500, binning=4, outlineMode=True)
+sim = CraterSim(terrainLength=500, minCraterRadius=50, maxCraterRadius=200, surfaceValue=185, craterValue=50, occlusionValue=0.6, fps=15)
+sim.generateCraters(steps=200, binning=4, outlineMode=True)
