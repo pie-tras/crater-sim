@@ -163,7 +163,7 @@ By modeling crater deposition and covering it is possible to visualize the count
 
 In trial one 2500 time steps were used (simulating 2500 * 10^3 years / 2500 impacts). This lead to a 3+ hour compute time. The result generated however is quite a beautiful example of the cratering rate and crater removal rate reaching an equillibrium.
 
-In trial two 200 time steps were used (simulating 200 * 10^3 years / 200 impacts). The compute time for this trial was on the order of ~10 minutes. The results as expected were much noiser yet still clearly reach an equillibrium state.
+In trial two 200 time steps were used (simulating 200 * 10^3 years / 200 impacts). The compute time for this trial was on the order of ~10 minutes. The results as expected were much noiser yet still clearly reach an equillibrium state. The differences between these trials highlights how average impactor size has a significant effect on saturation timescales. It took trial one 1990 cycles to reach saturation. Trial two only took 108. (18x difference). When calculating the relative age of a surface using crater saturation, it would likely be important to consider impactor size.
 
 Besides noise differences all figures display the same end state:
 
