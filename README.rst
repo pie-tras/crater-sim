@@ -61,13 +61,74 @@ From right to left, top to bottom:
 Analysis
 ========
 
-**Run 1**
+**Trial One**
 
 Conditions
 
-**Run 2**
+The saturation point was reached at TIME
+
+At 25% to saturation:
+
+.. image:: saturation25.png
+   :alt: 25 Percent 
+
+At 50% to saturation:
+
+.. image:: saturation50.png
+   :alt: 50 Percent 
+
+At 75% to saturation:
+
+.. image:: saturation75.png
+   :alt: 75 Percent 
+
+At 100% of saturation:
+
+.. image:: saturation100.png
+   :alt: 100 Percent 
+
+
+The following video is an animation of trial one (click to watch):
+
+.. image:: https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg
+    :alt: IMAGE ALT TEXT HERE
+    :target: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+**Trial Two**
+
+For trial two, the minimum crater size will be increased to VALUE. This will significantly decrease the time required to simulate before saturation can be detected. (Also I don't want to wait another 2 hours for the simulation to finish :) haha)
 
 Conditions
+
+The saturation point was reached at TIME
+
+At 25% to saturation:
+
+.. image:: saturation25.png
+   :alt: 25 Percent 
+
+At 50% to saturation:
+
+.. image:: saturation50.png
+   :alt: 50 Percent 
+
+At 75% to saturation:
+
+.. image:: saturation75.png
+   :alt: 75 Percent 
+
+At 100% of saturation:
+
+.. image:: saturation100.png
+   :alt: 100 Percent
+
+The following video is an animation of trial two (click to watch):
+
+.. image:: https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg
+    :alt: IMAGE ALT TEXT HERE
+    :target: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+**Conclusion**
 
 Further Development
 ===================
