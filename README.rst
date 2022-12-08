@@ -25,11 +25,58 @@ Consider a 500 km x 500 km planetary surface under the following assumptions:
   
   `math.exp(random.uniform(math.log(self.minCraterRadius), math.log(self.maxCraterRadius)))`
 
+Notes on Graphics
+=================
+
+There are six figures that display data about each time-step of the simulation.
+
+From right to left, top to bottom:
+
+**Cratered Terrain:**
+
+    Displays a visualization of the surface. The circles are crater rims. Red circles are craters that have hidden others.
+
+**Cumulative Crater Counts:**
+
+    Displays a radii binned graph of cumulative crater counts. One line displays all craters. One line displays Visible craters.
+    
+**Saturation Predictors:**
+
+    Graphs average slopes at intervals of visible craters line (next plot)
+    
+**Crater Count as a Function of Time:**
+
+    Graphs all craters as a function of time and visiable craters as a function of time.
+    
+**Crater Size Distribution:**
+
+    Histogram of crater radii and the current counts (visible and all)
+    
+**Predicted Saturation Percent:**
+
+    The perdicted saturation percent as a function of time.
+    
+**Example Graphic:**
+
 Analysis
 ========
 
+**Run 1**
+
+Conditions
+
+**Run 2**
+
+Conditions
+
 Further Development
 ===================
+
+A logical next step would be to rework the crater removal mechanics. Rather than computing (a rather abitrary) collision value, it would be significantly better to determine visible craters by measuring how many craters are detictable in the image of the surface. Methods of doing this could range from circle detection algorithms to a simple machine-learning image processing implementation. 
+
+Additionally if the images of the surface are relativly comparable to real surfaces: real images of planetary surfaces could be fed in to this to count craters. Since real surfaces do not have cratering rates that are anywhere near the timescales run on the simulation it would be more intersting data-wise to try and estimate the ages of these surfaces (which would likely need more information besides crater numbers).
+
+The collision detection that currently detects if craters are hidden likely could be improved via a quadtree datastructure. Another optimization would be changing how (especially filled) craters are drawn. When outlineMode is disabled drawing craters can cause significant computation time.
 
 Usage
 =====
