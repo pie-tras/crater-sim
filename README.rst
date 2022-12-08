@@ -86,7 +86,7 @@ The initial conditions were as follows:
                     surfaceValue=185, craterValue=50, occlusionValue=0.6, fps=30)
     sim.generateCraters(steps=2500, binning=4, outlineMode=True)
 
-The saturation point was reached at TIME
+The saturation point was reached at 1990 * 10^3 years
 
 At 25% to saturation:
 
@@ -106,7 +106,7 @@ At 75% to saturation:
 At 100% of saturation:
 
 .. image:: t1saturation100.png
-   :alt: 100 Percent 
+   :alt: 100 Percent
 
 The following video is an animation of trial one (click to watch):
 
@@ -116,7 +116,7 @@ The following video is an animation of trial one (click to watch):
 
 **Trial Two**
 
-For trial two, the crater size distribution will be shifted. The minimum crater radius will be increased to 50 km. The maximum crater radius will be increased to 200 km. This will significantly decrease the time required to simulate before saturation can be detected. (Also I don't want to wait another 3 hours for the simulation to finish :) haha) In a real senario this perhaps occur due to a rarity in non accreated material. Any impactors will have been formed from previously much smaller imactors.
+For trial two, the crater size distribution will be shifted. The minimum crater radius will be increased to 50 km. The maximum crater radius will be increased to 200 km. This will significantly decrease the time required to simulate before saturation can be detected. In a real senario this perhaps occur due to a rarity in non accreated material. Any impactors will have been formed from previously much smaller imactors.
 
 The initial conditions were as follows:
 
@@ -124,9 +124,9 @@ The initial conditions were as follows:
 
 .. code:: python
     
-    sim = CraterSim(terrainLength=500, minCraterRadius=5, maxCraterRadius=50,
-                    surfaceValue=185, craterValue=50, occlusionValue=0.6, fps=30)
-    sim.generateCraters(steps=2500, binning=4, outlineMode=True)
+    sim = CraterSim(terrainLength=500, minCraterRadius=50, maxCraterRadius=200, 
+                    surfaceValue=185, craterValue=50, occlusionValue=0.6, fps=15)
+    sim.generateCraters(steps=200, binning=4, outlineMode=True)
 
 The saturation point was reached at 108 * 10^3 years.
 
@@ -160,6 +160,12 @@ The following video is an animation of trial two (click to watch):
 **Conclusions**
 
 By modeling crater deposition and covering it is possible to visualize the counts of visible craters as a function of time. When this function asymptotes to zero the surface can be considered saturated. This was demonstrated in two trials with differing crater size distributions.
+
+In trial one 2500 time steps were used (simulating 2500 * 10^3 years / 2500 impacts). This lead to a 3+ hour compute time. The result generated however is quite a beautiful example of the cratering rate and crater removal rate reaching an equillibrium.
+
+In trial two 200 time steps were used (simulating 200 * 10^3 years / 200 impacts). The compute time for this trial was on the order of ~10 minutes. The results as expected were much noiser yet still clearly reach an equillibrium state.
+
+Commenting on the Cratered Terrain figures: By saturation, especially for trial one, the terrain visually seems over saturated. This puts some doubt into the validity of the calculation for weather or not a crater is hidden. Further thoughts on this are discussed in "Further Development".
 
 Further Development
 ===================
