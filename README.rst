@@ -116,7 +116,7 @@ The following video is an animation of trial one (click to watch):
 
 **Trial Two**
 
-For trial two, the minimum crater size will be increased to VALUE. This will significantly decrease the time required to simulate before saturation can be detected. (Also I don't want to wait another 2 hours for the simulation to finish :) haha)
+For trial two, the crater size distribution will be shifted. The minimum crater radius will be increased to 50 km. The maximum crater radius will be increased to 200 km. This will significantly decrease the time required to simulate before saturation can be detected. (Also I don't want to wait another 3 hours for the simulation to finish :) haha) In a real senario this perhaps occur due to a rarity in non accreated material. Any impactors will have been formed from previously much smaller imactors.
 
 The initial conditions were as follows:
 
@@ -128,33 +128,33 @@ The initial conditions were as follows:
                     surfaceValue=185, craterValue=50, occlusionValue=0.6, fps=30)
     sim.generateCraters(steps=2500, binning=4, outlineMode=True)
 
-The saturation point was reached at TIME
+The saturation point was reached at 108 * 10^3 years.
 
 At 25% to saturation:
 
-.. image:: saturation25.png
+.. image:: t2saturation25.png
    :alt: 25 Percent 
 
 At 50% to saturation:
 
-.. image:: saturation50.png
+.. image:: t2saturation50.png
    :alt: 50 Percent 
 
 At 75% to saturation:
 
-.. image:: saturation75.png
+.. image:: t2saturation75.png
    :alt: 75 Percent 
 
 At 100% of saturation:
 
-.. image:: saturation100.png
+.. image:: t2saturation100.png
    :alt: 100 Percent
 
 The following video is an animation of trial two (click to watch):
 
-.. image:: https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg
+.. image:: https://img.youtube.com/vi/-zCqaES7dUY/maxresdefault.jpg
     :alt: IMAGE ALT TEXT HERE
-    :target: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+    :target: https://www.youtube.com/watch?v=-zCqaES7dUY
 
 **Conclusion**
 
