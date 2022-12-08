@@ -17,13 +17,17 @@ Consider a 500 km x 500 km planetary surface under the following assumptions:
 * The rate of impacts is 1 every 1000 years.
 * The minimum measurable crater size has a diameter of 10 km.
 * A old crater is considered no longer visable when:
-  * The new crater has a larger radius than the old crater.
-  * The distance between the center of both craters is less than 30% of the the radius of the new crater.
+
+    * The new crater has a larger radius than the old crater.
+    * The distance between the center of both craters is less than 60% of the the radius of the new crater.
+
 * Effects such as erosion and secondary craters are ignored.
 * All craters are simple craters.
 * Crater radii are random under this distribution (weights smaller craters):
-  
-  `math.exp(random.uniform(math.log(self.minCraterRadius), math.log(self.maxCraterRadius)))`
+
+.. code:: python
+
+    math.exp(random.uniform(math.log(self.minCraterRadius), math.log(self.maxCraterRadius)))
 
 Notes on Graphics
 =================
@@ -55,15 +59,21 @@ From right to left, top to bottom:
 **Predicted Saturation Percent:**
 
     The perdicted saturation percent as a function of time.
-    
-**Example Graphic:**
 
 Analysis
 ========
 
 **Trial One**
 
-Conditions
+The initial conditions were as follows:
+
+    *See Usage section for parameter description*
+
+.. code:: python
+    
+    sim = CraterSim(terrainLength=500, minCraterRadius=5, maxCraterRadius=50,
+                    surfaceValue=185, craterValue=50, occlusionValue=0.6, fps=30)
+    sim.generateCraters(steps=2500, binning=4, outlineMode=True)
 
 The saturation point was reached at TIME
 
@@ -87,7 +97,6 @@ At 100% of saturation:
 .. image:: saturation100.png
    :alt: 100 Percent 
 
-
 The following video is an animation of trial one (click to watch):
 
 .. image:: https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg
@@ -98,7 +107,15 @@ The following video is an animation of trial one (click to watch):
 
 For trial two, the minimum crater size will be increased to VALUE. This will significantly decrease the time required to simulate before saturation can be detected. (Also I don't want to wait another 2 hours for the simulation to finish :) haha)
 
-Conditions
+The initial conditions were as follows:
+
+    *See Usage section for parameter description*
+
+.. code:: python
+    
+    sim = CraterSim(terrainLength=500, minCraterRadius=5, maxCraterRadius=50,
+                    surfaceValue=185, craterValue=50, occlusionValue=0.6, fps=30)
+    sim.generateCraters(steps=2500, binning=4, outlineMode=True)
 
 The saturation point was reached at TIME
 
@@ -146,9 +163,9 @@ Relevant code for running variatons of the simulation:
 
 .. code:: python
     
-    sim = CraterSim(terrainLength=500, minCraterRadius=100, maxCraterRadius=300, 
-                    surfaceValue=185, craterValue=50, occlusionValue=0.5, fps=30)
-    sim.generateCraters(steps=100, binning=4, outlineMode=True)
+    sim = CraterSim(terrainLength=500, minCraterRadius=5, maxCraterRadius=50,
+                    surfaceValue=185, craterValue=50, occlusionValue=0.6, fps=30)
+    sim.generateCraters(steps=2500, binning=4, outlineMode=True)
     
     
 The above code uses the following parameters to initialize the simulation:
