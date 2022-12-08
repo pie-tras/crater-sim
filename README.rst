@@ -90,29 +90,29 @@ The saturation point was reached at TIME
 
 At 25% to saturation:
 
-.. image:: saturation25.png
+.. image:: t1saturation25.png
    :alt: 25 Percent 
 
 At 50% to saturation:
 
-.. image:: saturation50.png
+.. image:: t1saturation50.png
    :alt: 50 Percent 
 
 At 75% to saturation:
 
-.. image:: saturation75.png
+.. image:: t1saturation75.png
    :alt: 75 Percent 
 
 At 100% of saturation:
 
-.. image:: saturation100.png
+.. image:: t1saturation100.png
    :alt: 100 Percent 
 
 The following video is an animation of trial one (click to watch):
 
-.. image:: https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg
+.. image:: https://img.youtube.com/vi/b0bS3ki7gDE/maxresdefault.jpg
     :alt: IMAGE ALT TEXT HERE
-    :target: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+    :target: https://www.youtube.com/watch?v=b0bS3ki7gDE
 
 **Trial Two**
 
@@ -156,7 +156,10 @@ The following video is an animation of trial two (click to watch):
     :alt: IMAGE ALT TEXT HERE
     :target: https://www.youtube.com/watch?v=-zCqaES7dUY
 
-**Conclusion**
+
+**Conclusions**
+
+By modeling crater deposition and covering it is possible to visualize the counts of visible craters as a function of time. When this function asymptotes to zero the surface can be considered saturated. This was demonstrated in two trials with differing crater size distributions.
 
 Further Development
 ===================
