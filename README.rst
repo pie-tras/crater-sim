@@ -165,7 +165,20 @@ In trial one 2500 time steps were used (simulating 2500 * 10^3 years / 2500 impa
 
 In trial two 200 time steps were used (simulating 200 * 10^3 years / 200 impacts). The compute time for this trial was on the order of ~10 minutes. The results as expected were much noiser yet still clearly reach an equillibrium state.
 
+Besides noise differences all figures display the same end state:
+
+ * Cratered Terrain has almost no visible surface gaps.
+ * Cumulative Crater Counts (log-space) has a "steep" linear distribution for all craters and a much linear shallower distribution for visible craters.
+ * Saturation Predictors initially start around a value of 1.0 and trend to 0.0.
+ * Crater Count as a Function of Time shows how visible craters asymptotes off from the constant cratering rate as time increases.
+ * Crater Size Distribution shows weighting towards small craters for "all craters" and a realtivly even distribution for visible craters.
+ * Perdicted Saturation Percent seems to logrithmically approach 1.0.
+
 Commenting on the Cratered Terrain figures: By saturation, especially for trial one, the terrain visually seems over saturated. This puts some doubt into the validity of the calculation for weather or not a crater is hidden. Further thoughts on this are discussed in "Further Development".
+
+Commenting on Crater Count as a Function of Time: If a trial was computed with a much larger timescale than even trial one all craters would likely approach appearing as a constant y = K. This occurs as a result of the equilibria definition of crater saturation.
+
+Commenting on the Crater Size Distribution at Saturation: The relativly even distribution is likely due to the surface "being at equilibrium". Any craters added remove other craters. This should be a negitive feedback system for any size concentrations (hence the even distribution).
 
 Further Development
 ===================
